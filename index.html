@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DGHS.KR | ARCHIVE</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top right, #1e293b, #0f172a);
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* 배경 장식용 원 */
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: 0;
+        }
+        .circle-1 { width: 300px; height: 300px; background: rgba(56, 189, 248, 0.2); top: 10%; left: 15%; }
+        .circle-2 { width: 400px; height: 400px; background: rgba(139, 92, 246, 0.15); bottom: 10%; right: 10%; }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            background-color: rgba(30, 41, 59, 0.7);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            width: 90%;
+            max-width: 450px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+            font-size: 0.9rem;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .btn {
+            display: block;
+            padding: 1rem;
+            text-decoration: none;
+            color: #f8fafc;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #38bdf8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(56, 189, 248, 0.3);
+            color: #38bdf8;
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        /* 강조 버튼 스타일 */
+        .btn-primary {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(129, 140, 248, 0.1));
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+
+    <div class="container">
+        <h1>DGHS.KR</h1>
+        <p>Private Digital Archive</p>
+
+        <div class="button-group">
+            <a href="https://sites.google.com/pess.cnehs.kr/history/" class="btn btn-primary" target="_blank">
+                📚 한국사 도감 접속
+            </a>
+
+            <a href="https://url.kr/8oiohf" class="btn" target="_blank">
+                🚀 우주선 게임 실행
+            </a>
+
+            <a href="#" class="btn" onclick="alert('준비 중인 페이지입니다.'); return false;">
+                🛠️ 업데이트 예정
+            </a>
+        </div>
+
+        <footer>
+            &copy; 2026 DGHS.KR. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
